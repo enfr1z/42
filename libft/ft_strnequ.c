@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnequ.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pdiedra <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: pdiedra <pdiedra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/04 20:40:09 by pdiedra           #+#    #+#             */
-/*   Updated: 2019/04/06 19:52:14 by pdiedra          ###   ########.fr       */
+/*   Updated: 2019/04/15 13:09:45 by pdiedra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n)
 		return (1);
 	while (s1[i] == s2[i])
 	{
-		if (s1 == '\0' || i == (n - 1))
+		if (s1[i] == '\0' || i == (n - 1))
 			return (1);
 		i++;
 	}

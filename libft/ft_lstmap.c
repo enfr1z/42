@@ -6,7 +6,7 @@
 /*   By: pdiedra <pdiedra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/07 18:09:31 by pdiedra           #+#    #+#             */
-/*   Updated: 2019/04/12 14:03:19 by pdiedra          ###   ########.fr       */
+/*   Updated: 2019/04/15 13:15:09 by pdiedra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,20 @@ static void	ft_lst_del(t_list *lst)
 {
 	t_list	*next;
 
-	while (lst)
+	if (lst)
 	{
-		next = lst->next;
-		free(lst->content);
-		free(lst->next);
-		lst = next;
+		while (lst)
+		{
+			next = lst->next;
+			if (lst->content)
+				free(lst->content);
+			if (lst->next)
+				free(lst->next);
+			lst = next;
+		}
+		free(lst);
+		lst = NULL;
 	}
-	free(lst);
-	lst = NULL;
 }
 
 t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))

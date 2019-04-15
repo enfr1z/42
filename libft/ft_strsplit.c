@@ -6,7 +6,7 @@
 /*   By: pdiedra <pdiedra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 15:09:47 by pdiedra           #+#    #+#             */
-/*   Updated: 2019/04/12 18:47:26 by pdiedra          ###   ########.fr       */
+/*   Updated: 2019/04/15 13:19:44 by pdiedra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,16 +34,20 @@ static	int		ft_count_words(const char *s, char c)
 	return (wrd);
 }
 
-static void		ft_del(char **tab)
+static char		**ft_del(char **tab)
 {
-	while (*tab)
+	if (tab)
 	{
-		free(*tab);
-		*tab = NULL;
-		tab++;
+		while (*tab)
+		{
+			free(*tab);
+			*tab = NULL;
+			tab++;
+		}
+		free(tab);
+		tab = NULL;
 	}
-	free(tab);
-	tab = NULL;
+	return (NULL);
 }
 
 char			**ft_strsplit(char const *s, char c)
@@ -69,7 +73,7 @@ char			**ft_strsplit(char const *s, char c)
 		while (s[i] && s[i] != c)
 			i++;
 		if ((tab[j] = ft_strsub(s, start, i++ - start)) == NULL)
-			ft_del(tab);
+			return (ft_del(tab));
 	}
 	tab[j] = NULL;
 	return (tab);

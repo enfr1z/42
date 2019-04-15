@@ -6,7 +6,7 @@
 /*   By: pdiedra <pdiedra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/03 12:18:38 by pdiedra           #+#    #+#             */
-/*   Updated: 2019/04/12 18:43:50 by pdiedra          ###   ########.fr       */
+/*   Updated: 2019/04/15 13:22:32 by pdiedra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 char				*ft_strrev(char const *str);
 void				ft_swap(int *a, int *b);
-int					ft_insert_sort(int *tab, size_t size);
+int					ft_bubble_sort(int *tab, size_t size);
 int					ft_is_prime(int nb);
 int					ft_max(int *tab, unsigned int len);
 
