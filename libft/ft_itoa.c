@@ -6,11 +6,11 @@
 /*   By: pdiedra <pdiedra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 16:04:26 by pdiedra           #+#    #+#             */
-/*   Updated: 2019/04/10 10:20:08 by pdiedra          ###   ########.fr       */
+/*   Updated: 2019/04/17 10:56:26 by pdiedra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_itoa(int n)
 {

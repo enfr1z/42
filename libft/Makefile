@@ -6,7 +6,7 @@
 #    By: pdiedra <pdiedra@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/03 12:46:11 by pdiedra           #+#    #+#              #
-#    Updated: 2019/04/15 13:19:03 by pdiedra          ###   ########.fr        #
+#    Updated: 2019/04/17 11:04:59 by pdiedra          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ ft_strdel.c ft_strdup.c ft_strequ.c ft_striter.c ft_striteri.c ft_strjoin.c \
 ft_strlcat.c ft_strlen.c ft_strmap.c ft_strmapi.c ft_strncat.c ft_strncmp.c \
 ft_strncpy.c ft_strnequ.c ft_strnew.c ft_strnstr.c ft_strrchr.c ft_strrev.c \
 ft_strsplit.c ft_strstr.c ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c \
-ft_swap.c ft_bubble_sort.c ft_is_prime.c ft_max.c
+ft_swap.c ft_bubble_sort.c ft_is_prime.c ft_max.c ft_count_words.c ft_realloc.c
 
 OBJ = ft_atoi.o ft_bzero.o ft_isalnum.o ft_isalpha.o ft_isascii.o \
 ft_isdigit.o ft_isprint.o ft_itoa.o ft_lstadd.o ft_lstdel.o ft_lstdelone.o \
@@ -36,7 +36,7 @@ ft_strdel.o ft_strdup.o ft_strequ.o ft_striter.o ft_striteri.o ft_strjoin.o \
 ft_strlcat.o ft_strlen.o ft_strmap.o ft_strmapi.o ft_strncat.o ft_strncmp.o \
 ft_strncpy.o ft_strnequ.o ft_strnew.o ft_strnstr.o ft_strrchr.o ft_strrev.o \
 ft_strsplit.o ft_strstr.o ft_strsub.o ft_strtrim.o ft_tolower.o ft_toupper.o \
-ft_swap.o ft_bubble_sort.o ft_is_prime.o ft_max.o
+ft_swap.o ft_bubble_sort.o ft_is_prime.o ft_max.o ft_count_words.o ft_realloc.o
 
 FLAGS = -Wall -Wextra -Werror
 

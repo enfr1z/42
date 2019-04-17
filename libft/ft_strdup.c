@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pdiedra <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: pdiedra <pdiedra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/03 17:41:23 by pdiedra           #+#    #+#             */
-/*   Updated: 2019/04/04 14:53:19 by pdiedra          ###   ########.fr       */
+/*   Updated: 2019/04/17 10:57:37 by pdiedra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strdup(const char *str)
 {

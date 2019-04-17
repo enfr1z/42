@@ -6,12 +6,11 @@
 /*   By: pdiedra <pdiedra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/04 19:51:22 by pdiedra           #+#    #+#             */
-/*   Updated: 2019/04/10 15:34:14 by pdiedra          ###   ########.fr       */
+/*   Updated: 2019/04/17 10:58:03 by pdiedra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strnew(size_t size)
 {

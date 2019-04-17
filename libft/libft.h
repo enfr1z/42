@@ -6,13 +6,15 @@
 /*   By: pdiedra <pdiedra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/03 12:18:38 by pdiedra           #+#    #+#             */
-/*   Updated: 2019/04/15 13:22:32 by pdiedra          ###   ########.fr       */
+/*   Updated: 2019/04/17 10:59:37 by pdiedra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
+# include <stdlib.h>
+# include <unistd.h>
 
 void				*ft_memset(void *dest, int c, size_t n);
 void				ft_bzero(void *dest, size_t n);
@@ -85,5 +87,7 @@ void				ft_swap(int *a, int *b);
 int					ft_bubble_sort(int *tab, size_t size);
 int					ft_is_prime(int nb);
 int					ft_max(int *tab, unsigned int len);
+void				*ft_realloc(void *str, size_t size);
+int					ft_count_words(const char *s, char c);
 
 #endif

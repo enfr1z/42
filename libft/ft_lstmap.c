@@ -6,14 +6,13 @@
 /*   By: pdiedra <pdiedra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/07 18:09:31 by pdiedra           #+#    #+#             */
-/*   Updated: 2019/04/15 13:15:09 by pdiedra          ###   ########.fr       */
+/*   Updated: 2019/04/17 10:56:41 by pdiedra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-static void	ft_lst_del(t_list *lst)
+static void	*ft_lst_del(t_list *lst)
 {
 	t_list	*next;
 
@@ -31,6 +30,7 @@ static void	ft_lst_del(t_list *lst)
 		free(lst);
 		lst = NULL;
 	}
+	return (NULL);
 }
 
 t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
@@ -52,7 +52,7 @@ t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 	{
 		new = (t_list *)malloc(sizeof(t_list));
 		if (new == NULL)
-			ft_lst_del(first);
+			return (ft_lst_del(first));
 		new = f(tmp);
 		tmp = tmp->next;
 		elem->next = new;

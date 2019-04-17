@@ -6,12 +6,11 @@
 /*   By: pdiedra <pdiedra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 10:56:52 by pdiedra           #+#    #+#             */
-/*   Updated: 2019/04/12 18:43:25 by pdiedra          ###   ########.fr       */
+/*   Updated: 2019/04/17 10:58:21 by pdiedra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strtrim(char const *s)
 {

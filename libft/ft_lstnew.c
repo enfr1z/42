@@ -6,12 +6,11 @@
 /*   By: pdiedra <pdiedra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 17:34:04 by pdiedra           #+#    #+#             */
-/*   Updated: 2019/04/12 14:16:26 by pdiedra          ###   ########.fr       */
+/*   Updated: 2019/04/17 10:56:47 by pdiedra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 t_list	*ft_lstnew(void	const *content, size_t content_size)
 {
