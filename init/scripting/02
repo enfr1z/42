@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ -z ${1} ];    then
+    echo "\nusage: sh 02 username\n"
+else
+    echo "I will delete username: $1"
+    sudo userdel -f $1
+fi

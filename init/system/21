@@ -1,0 +1,2 @@
+#ls /home
+cat /etc/passwd | grep '/home'| awk -F ':' '{print $1}'
