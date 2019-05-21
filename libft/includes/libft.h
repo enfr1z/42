@@ -6,7 +6,7 @@
 /*   By: pdiedra <pdiedra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/03 12:18:38 by pdiedra           #+#    #+#             */
-/*   Updated: 2019/04/17 10:59:37 by pdiedra          ###   ########.fr       */
+/*   Updated: 2019/05/21 13:05:31 by pdiedra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,5 +89,10 @@ int					ft_is_prime(int nb);
 int					ft_max(int *tab, unsigned int len);
 void				*ft_realloc(void *str, size_t size);
 int					ft_count_words(const char *s, char c);
+int					ft_pow(int nbr, int pow);
+int					ft_skipspace(const char *s);
+int					ft_abs(int nbr);
+int					ft_atoi_base(const char *str, int base);
+int					ft_isspace(int c);
 
 #endif
